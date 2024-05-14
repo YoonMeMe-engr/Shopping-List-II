@@ -20,13 +20,14 @@ const handleChange = (event) => {
     const trashIcon = document.createElement("i"); //အမှိုက်ပုံးအတွက်သုံး
     trashIcon.classList.add("fa-solid" , "fa-trash-can");
     trashIcon.addEventListener("click" , (event) => {
-        const renew = productContainer.remove();
+       const renew = outside.remove();
         if (renew) {
             productId += 1;
-            return;
+            return;            
         } else {
             productId -= 1;
-            return;
+            return; 
+        }
     });
     spanTag.id = productId;
     const product = productId.toString() + ". " + inputValue; //1 2 3 4 ပါဖို့သုံး
