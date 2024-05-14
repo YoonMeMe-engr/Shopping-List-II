@@ -25,7 +25,7 @@ const handleChange = (event) => {
             productId += 1;
             return;
         } else {
-            productId -+ 1;
+            productId -= 1;
             return;
     });
     spanTag.id = productId;
