@@ -20,7 +20,7 @@ const handleChange = (event) => {
     const trashIcon = document.createElement("i"); //အမှိုက်ပုံးအတွက်သုံး
     trashIcon.classList.add("fa-solid" , "fa-trash-can");
     trashIcon.addEventListener("click" , (event) => {
-       const renew = outside.remove();
+       const renew = productContainer.remove();
         if (renew) {
             productId += 1;
             return;            
